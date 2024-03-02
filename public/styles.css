@@ -1,0 +1,208 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  animation: background-color-change 10s infinite alternate;
+}
+
+@keyframes background-color-change {
+  0% {
+    background-color: #0722bb;
+  }
+  50% {
+    background-color: #05057c;
+  }
+  100% {
+    background-color: #030352;
+  }
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container p {
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.login-form input:hover,
+.login-form input:focus {
+    border-color: #00408a;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00408a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+    background-color: #1557a3;
+}
+
+.bottom-text {
+    margin-top: 20px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.anime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  animation: background-color-change 10s infinite alternate;
+}
+
+.firework {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: fireworks 3s infinite;
+}
+
+@keyframes fireworks {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-1000px) scale(0);
+    opacity: 0;
+  }
+}
+
+.happy-birthday {
+  position: absolute;
+  font-size: 36px;
+  text-align: center;
+  opacity: 0;
+  text-shadow: 2px 2px 4px rgb(255, 253, 253);
+  animation: fade-in 2s ease-in-out forwards, move-up 5s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes move-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.name-tag {
+  position: absolute;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15%;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  text-shadow: 2px 2px 4px rgb(255, 253, 253);
+  animation: fade-in 2s ease-in-out forwards, move-up 5s ease-in-out infinite;
+}

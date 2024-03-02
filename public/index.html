@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scrpit.js"></script>
+    <title>Login Form</title>
+</head>
+    <div id="loadingSpinner" class="lds-ellipsis" style="display: none;"><div></div><div></div><div></div><div></div></div>
+</div>
+<body>
+    <div class="login-container" id="loginContainer">
+        <h2>Login</h2>
+        <form class="login-form">
+            <input type="text" placeholder="Nama Anda" name="Nama Anda" required>
+            <input type="password" placeholder="Tanggal Lahir" name="Tanggal Lahir" required>
+            <button onclick="startLoading()" type="button">Login</button>
+        </form>
+        <p class="bottom-text">Silahkan login sesuai dengan petunjuk</p>
+    </div>
+    <div  style="display: none;" id="otherContainer" >
+        <article class="anime" >
+            <div class="happy-birthday"  id="content">
+                HAPPY BIRTHDAY !
+            </div>
+            <div class="name-tag">
+                <p>---------- Ainun Jariyah ----------</p>
+            </div>
+        </article>
+    </div>
+</html>
